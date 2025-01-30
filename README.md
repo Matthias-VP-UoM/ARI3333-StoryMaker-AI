@@ -40,10 +40,10 @@ Then go to your profile, Settings, and Access Tokens. Follow the steps to create
 
 Go to the working directory where you cloned the repository and create a New Text File. make sure to name it <b>config.ini</b>.
 
-On the first line of the new config file, write <b>[HuggingFace</b>.<br>
-On the second line, write the following line, where "xxx" represents the part of your API key that comes after the prefix "hf_":
+On the new config file, write the following 2 lines, where "xxx" represents the part of your API key that comes after the prefix "hf_":
 
 ```bash
+    [HuggingFace]
     api_key = hf_xxx
   ```
 
