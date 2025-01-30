@@ -8,7 +8,7 @@ StoryMaker AI is an AI-powered content generation system capable of producing a 
 The first step is to clone the entire repository, ensuring you have all the available code:
 
   ```bash
-    git clone https://github.com/AFLucas-UOM/Storyboard-AI.git
+    git clone https://github.com/Matthias-VP-UoM/ARI3333-StoryMaker-AI.git
   ```
 
 ## 2. Install package dependencies
