@@ -11,9 +11,9 @@ StoryMaker AI is an AI-powered content generation system capable of producing a 
 ## 1. Clone the repository:
 The first step is to clone the entire repository, ensuring you have all the available code:
 
-  ```bash
-    git clone https://github.com/Matthias-VP-UoM/ARI3333-StoryMaker-AI.git
-  ```
+```bash
+git clone https://github.com/Matthias-VP-UoM/ARI3333-StoryMaker-AI.git
+```
 
 ## 2. Install package dependencies
 In order to install the package dependencies, you must ensure that Python and pip are installed on your device.
@@ -22,18 +22,18 @@ Then, perform one of the following techniques to get the necessary packages:
 ### a. Install the packages from requirements.txt
 
 ```bash
-    pip install -r requirements.txt
-  ```
+pip install -r requirements.txt
+```
 
 ### b. Install the Streamlit and Ollama packages separately, which will automatically install the latest version of the rest of the packages
 
 ```bash
-    pip install streamlit
-  ```
+pip install streamlit
+```
 
 ```bash
-    pip install ollama
-  ```
+pip install ollama
+```
 
 ## 3. Create a Hugging Face API key
 Go to the <a href="https://huggingface.co/" target="_blank">Hugging Face</a> website and create an account.
@@ -47,14 +47,14 @@ Go to the working directory where you cloned the repository and create a New Tex
 On the new config file, write the following 2 lines, where "xxx" represents the part of your API key that comes after the prefix "hf_":
 
 ```bash
-    [HuggingFace]
-    api_key = hf_xxx
-  ```
+[HuggingFace]
+api_key = hf_xxx
+```
 
 ## 5. Start the App
-  ```bash
-  streamlit run sl_story_gen.py
-  ```
+```bash
+streamlit run sl_story_gen.py
+```
 
 ## Note
 This was developed for the <b><i>ARI3333</i></b> study unit, which is titled <b><i>"Generative AI"</i></b>
