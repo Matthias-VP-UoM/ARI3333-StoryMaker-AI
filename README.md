@@ -35,12 +35,36 @@ pip install streamlit
 pip install ollama
 ```
 
-## 3. Create a Hugging Face API key
-Go to the <a href="https://huggingface.co/" target="_blank">Hugging Face</a> website and create an account.
+## 3. Install Ollama
+Although this project can work without performing this step, it is still imperative that you ensure that both Ollama and the necessary models are installed.
+
+To install Ollama, go to the <a href="https://ollama.com/" target="_blank">Ollama Home Page</a> and download the latest version of Ollama available for your operating system.
+
+Once Ollama is fully installed, go to a Command Line, and type the following 2 commands to install the following 2 models:
+
+```bash
+ollama pull llama3.2
+```
+
+```bash
+ollama pull llama-guard3:1b
+```
+
+
+Once the above two processes are complete, you can check that both of them are installed by using the following command:
+
+```bash
+ollama list
+```
+
+## 4. Create a Hugging Face API key
+For safety purposes, the API key used to access the FLUX.1-dev model is not provided in this repository. Therefore, you will have to create your own key.
+
+First, go to the <a href="https://huggingface.co/" target="_blank">Hugging Face</a> website and create an account.
 
 Then go to your profile, Settings, and Access Tokens. Follow the steps to create your own Hugging Face API key. Make sure to copy your API key as this will be needed for the next step.
 
-## 4. Add your API key to the project
+## 5. Add your API key to the project
 
 Go to the working directory where you cloned the repository and create a New Text File. make sure to name it <b>config.ini</b>.
 
@@ -51,7 +75,7 @@ On the new config file, write the following 2 lines, where "xxx" represents the 
 api_key = hf_xxx
 ```
 
-## 5. Start the App
+## 6. Start the App
 ```bash
 streamlit run sl_story_gen.py
 ```
